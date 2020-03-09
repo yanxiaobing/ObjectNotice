@@ -14,6 +14,7 @@
 		ED39807D241699C900D1A308 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED39807C241699C900D1A308 /* Assets.xcassets */; };
 		ED398080241699C900D1A308 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED39807E241699C900D1A308 /* LaunchScreen.storyboard */; };
 		ED39808D24169AE300D1A308 /* ObjectNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED39808C24169AE300D1A308 /* ObjectNotice.swift */; };
+		ED39808F2416B2A100D1A308 /* ObjectNotice.podspec in Resources */ = {isa = PBXBuildFile; fileRef = ED39808E2416B2A100D1A308 /* ObjectNotice.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		ED39807F241699C900D1A308 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED398081241699C900D1A308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED39808C24169AE300D1A308 /* ObjectNotice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectNotice.swift; sourceTree = "<group>"; };
+		ED39808E2416B2A100D1A308 /* ObjectNotice.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ObjectNotice.podspec; path = ../ObjectNotice.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		ED398067241699C400D1A308 = {
 			isa = PBXGroup;
 			children = (
+				ED39808E2416B2A100D1A308 /* ObjectNotice.podspec */,
 				ED39808B24169AAE00D1A308 /* ObjectNotice */,
 				ED398072241699C400D1A308 /* ObjectNoticeDemo */,
 				ED398071241699C400D1A308 /* Products */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED398080241699C900D1A308 /* LaunchScreen.storyboard in Resources */,
+				ED39808F2416B2A100D1A308 /* ObjectNotice.podspec in Resources */,
 				ED39807D241699C900D1A308 /* Assets.xcassets in Resources */,
 				ED39807B241699C400D1A308 /* Main.storyboard in Resources */,
 			);
