@@ -25,30 +25,30 @@ extension NSObject {
 
 public class ObjectNotice {
     
-    static let shared = ObjectNotice()
+    public static let shared = ObjectNotice()
     
     public typealias NoticeBlock = (_ object:Any? ,_ userInfo:[AnyHashable:Any]?)->()
     
     private var blockMap : [String : [[String:NoticeBlock]]]
     
-    public init(){
+    private init(){
         blockMap = [String : [[String:NoticeBlock]]]()
     }
     
     
-    func post(_ name : String) {
+    public func post(_ name : String) {
         post(name, nil, nil)
     }
     
-    func post(_ name : String , _ object : Any?) {
+    public func post(_ name : String , _ object : Any?) {
         post(name, object, nil)
     }
     
-    func post(_ name : String , _ object : Any?, _ userInfo:[AnyHashable : Any]?) {
+    public func post(_ name : String , _ object : Any?, _ userInfo:[AnyHashable : Any]?) {
         NotificationCenter.default.post(name: NSNotification.Name(name), object: object, userInfo: userInfo)
     }
     
-    func observer(_ observer : NSObject , _ name : String ,_ block : @escaping NoticeBlock) {
+    public func observer(_ observer : NSObject , _ name : String ,_ block : @escaping NoticeBlock) {
         if !blockMap.keys.contains(name) {
             NotificationCenter.default.addObserver(self, selector: #selector(dealWithNotice(_:)), name: NSNotification.Name(name), object: nil)
         }
@@ -71,7 +71,7 @@ public class ObjectNotice {
         }
     }
     
-    func removeObserver(_ observer : NSObject) {
+    public func removeObserver(_ observer : NSObject) {
         var map = blockMap
         map.forEach { (name, blockList) in
             var temList = blockList

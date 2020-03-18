@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = 'ObjectNotice'
-    s.version      = '1.0.0'
+    s.version      = '1.0.1'
     s.summary      = '封装NotificationCenter.default，使用Closures替代#selector'
     s.homepage     = 'https://github.com/yanxiaobing/ObjectNotice'
     s.license      = 'MIT'
