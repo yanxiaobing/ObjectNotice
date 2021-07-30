@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
     s.name         = 'ObjectNotice'
-    s.version      = '1.0.1'
-    s.summary      = '封装NotificationCenter.default，使用Closures替代#selector'
+    s.version      = '1.1.0'
+    s.summary      = '修复多次实例监听相同通知时通知移除问题'
     s.homepage     = 'https://github.com/yanxiaobing/ObjectNotice'
     s.license      = 'MIT'
     s.authors      = {'XBingo' => 'dove025@qq.com'}

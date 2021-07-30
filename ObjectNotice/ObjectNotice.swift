@@ -80,7 +80,8 @@ public class ObjectNotice {
                 if info.keys.first == observer.objectIdentifier {
                     temList.remove(at: idx)
                     if temList.count > 0 {
-                        blockMap[name] = temList
+                        map[name] = temList
+                        blockMap = map
                     }else{
                         map.removeValue(forKey: name)
                         blockMap = map
